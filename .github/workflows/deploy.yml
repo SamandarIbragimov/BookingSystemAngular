@@ -32,12 +32,12 @@ jobs:
 
       # 5️⃣ Disable Jekyll
       - name: Disable Jekyll
-        run: echo "" > booking-frontend/dist/booking-frontend/.nojekyll
+        run: echo "" > dist/booking-frontend/.nojekyll
 
       # 6️⃣ Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages          # Target branch
-          folder: dist/bookingsystemangular  # Angular build output
+          folder: dist/booking-frontend  # Angular build output
           clean: true               # Remove old files before deploy
