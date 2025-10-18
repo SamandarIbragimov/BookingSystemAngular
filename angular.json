@@ -44,7 +44,7 @@
                 }
               ],
               "outputHashing": "all",
-              "baseHref": "/BookingSystem/"
+              "baseHref": "/BookingSystemClient/"
             },
             "development": {
               "buildOptimizer": false,
