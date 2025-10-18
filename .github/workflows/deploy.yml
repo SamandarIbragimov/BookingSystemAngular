@@ -38,7 +38,7 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          branch: gh-pages      
+          branch: gh-pages     # The branch to deploy to  
           folder: dist/booking-frontend 
           clean: true              
           commit-message: "Deploy Angular app to GitHub Pages"
