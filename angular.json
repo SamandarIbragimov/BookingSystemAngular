@@ -43,8 +43,7 @@
                   "maximumError": "4kb"
                 }
               ],
-              "outputHashing": "all",
-              "baseHref": "/BookingSystemClient/"
+              "outputHashing": "all"
             },
             "development": {
               "buildOptimizer": false,
