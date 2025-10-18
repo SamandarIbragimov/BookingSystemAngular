@@ -1,0 +1,16 @@
+<div class="container">
+  <h1>Available Rooms</h1>
+
+  <div *ngIf="loading">Loading...</div>
+  <div *ngIf="error" class="error">{{ error }}</div>
+
+  <div *ngIf="!loading && rooms.length === 0">No rooms available.</div>
+
+  <div class="rooms-grid">
+    <div class="room-card" *ngFor="let room of rooms">
+      <h3>{{ room.number }} — {{ room.type }}</h3>
+      <p>{{ room.description }}</p>
+      <p><strong>{{ room.pricePerNight | currency:'USD' }}</strong> / night</p>
+    </div>
+  </div>
+</div>
